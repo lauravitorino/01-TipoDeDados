@@ -48,28 +48,79 @@ int main()
 
 	cout << endl << endl;
 
+	//cout << "Qualquer tecla para continuar...";
+	//system("pause"); // somente no Windows
+	//system("cls");
+
+	//cout << "Entrada de Dados" << endl;
+	//cout << "================" << endl;
+	//string nome = "";
+	//int idade = 0;
+	//int dias = 0;
+	//int horas = 0;
+	//int minutos = 0;
+
+	//cout << "Digite seu nome: ";
+	//cin >> nome;
+	//cout << "Digite sua idade: ";
+	//cin >> idade;
+	//dias = idade * 365;
+	//horas = dias * 24;
+	//minutos = horas  * 60;
+	//cout << "Sua idade em dias e: " << dias << endl;
+	//cout << "Sua idade em horas e: " << horas << endl;
+	//cout << "Sua idade em minutos e: " << minutos << endl;
+
 	cout << "Qualquer tecla para continuar...";
 	system("pause"); // somente no Windows
 	system("cls");
 
-	cout << "Entrada de Dados" << endl;
-	cout << "================" << endl;
-	string nome = "";
-	int idade = 0;
+
+	//Exercicío 2
+	cout << "Conversão de Temperatura" << endl;
+	int celsius = 0;
+	double fahrenheit = 0;
+	double kelvin = 0;
+
+	cout << "Digite a temperatura em  Celsius:";
+	cin >> celsius;
+	fahrenheit = (celsius * 1.82) + 32;
+	kelvin = celsius + 273.15;
+	
+	cout << "A temperatura " << celsius << "C em fahrenheith e " << fahrenheit << endl;
+	cout << "A temperatura " << celsius << "C em  kelvin e " << kelvin << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	//Exercicío 3
+	cout << "Calculadora de Segundos" << endl;
+	long segundos = 0;
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	long segundosR = 0;
 
-	cout << "Digite seu nome: ";
-	cin >> nome;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	dias = idade * 365;
-	horas = dias * 24;
-	minutos = horas  * 60;
-	cout << "Sua idade em dias e: " << dias << endl;
-	cout << "Sua idade em horas e: " << horas << endl;
-	cout << "Sua idade em minutos e: " << minutos << endl;
+	cout << "Digite uma quantidade de segundos" << endl;
+	cin >> segundos;
+
+	minutos = segundos / 60;
+	horas = minutos / 60;
+	dias = horas / 24;
+	segundosR = segundos % 60;
+
+	
+	cout << "A qtd de minutos e: " << minutos << endl;
+	cout << "A qtd de minutos e: " << horas << endl;
+	cout << "A qtd de dias e: " <<  dias << endl;
+	cout <<"A qtd de segundos restantes e: " << segundosR << endl;
+	
+
+
+		
+
+
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
